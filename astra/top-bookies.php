@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Template Name: Regular Page
+ * Template Name: Top-Bookies
  * description: >-
-  Regular Page template as new regular design 
+  Top-Bookies Page template as new Regular Design 
 */
 
 if ( ! defined( 'ABSPATH' ) ) {

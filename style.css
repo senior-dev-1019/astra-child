@@ -93,7 +93,6 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 }
 
 .entry-header {
-    background-image: url('./assets/images/Header_HighRollersMain-min.jpg');
     background-size: cover;
     height: 428px;
 }
@@ -139,14 +138,37 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 #menu-footer-menu>li>a {
     color:  white;
     text-transform: uppercase;
+    font-family: "OpenSans Regular";
 }
 
 #menu-footer-menu>li>ul>li>a {
     color:  gray;
+    font-family: "OpenSans Regular";
 }
 
 #menu-footer-menu>li>ul>li>a>p {
     line-height: 1.3;
+    font-family: "OpenSans Regular";
+}
+
+#menu-footer-menu>li>ul>li>a>label {
+    color: white;
+    font-family: "OpenSans Bold";
+}
+
+#menu-footer-menu>li>ul>li>a>i {
+    color: white;
+    float: right;
+    margin-right: -75px;
+    font-family: "OpenSans Bold";
+    font-style: initial;
+}
+
+#menu-footer-menu>li>ul>li>a>span {
+    color: white;
+    font-size: 3rem;
+    line-height: 1.1;
+    font-family: "OpenSans Bold";
 }
 
 #menu-footer-menu>li>ul>li>a:hover {

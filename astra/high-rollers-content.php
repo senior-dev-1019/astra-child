@@ -21,11 +21,13 @@
 				'class' => join( ' ', get_post_class() ),
 			)
 		);
+
+    	$template_path = explode(".", basename( get_page_template() ));
 		?>
 >
 	<?php astra_entry_top(); ?>
 
-	<header class="entry-header <?php astra_entry_header_class(); ?>">
+	<header class="entry-header <?php astra_entry_header_class(); ?>" style='background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/<?php echo $template_path[0] ?>.jpg);'>
 		<?php
 
 		astra_child_the_title(
