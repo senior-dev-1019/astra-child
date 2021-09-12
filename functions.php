@@ -24,6 +24,8 @@ add_action( 'astra_child_template_parts_content_bottom', 'child_template_parts_c
 // Add closing and ending div 'ast-row'.
 add_action( 'astra_child_template_parts_content_top', 'astra_child_templat_part_wrap_open', 25 );
 add_action( 'astra_child_template_parts_content_bottom', 'astra_child_templat_part_wrap_close', 5 );
+add_action( 'astra_child_content_bottom', 'child_content_bottom' );
+add_action( 'astra_child_footer', 'astra_child_footer_markup' );
 
 function my_theme_enqueue_styles() {
     $parenthandle = 'parent-style'; // This is 'twentyfifteen-style' for the Twenty Fifteen theme.
@@ -164,5 +166,63 @@ function astra_child_the_title( $before = '', $after = '', $post_id = 0, $echo =
         echo $title; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
     } else {
         return $title;
+    }
+}
+
+function astra_child_content_bottom() {
+    do_action( 'astra_child_content_bottom' );
+}
+
+function child_content_bottom() {
+?> 
+<div class="content_bottom">
+    <div class="content_bottom_text_area">
+        <h2>A TEXT HERE</h2>
+        <hr style="height: 2px; width: 5rem; background-color: #fff;margin-top: 20px;">
+        <p>Our website is designed for both experienced and Indexperienced punters.</p>
+        <p>This being said, be sure to check our our full reviews and to also navigate across the different sections. We are convinced you'll find great value in what we share!</p>
+    </div>
+</div>
+<?php
+}
+
+function astra_child_footer() {
+    do_action( 'astra_child_footer' );
+}
+
+
+/**
+ * Function to get site Footer
+ */
+if ( ! function_exists( 'astra_child_footer_markup' ) ) {
+
+    /**
+     * Site Footer - <footer>
+     *
+     * @since 1.0.0
+     */
+    function astra_child_footer_markup() {
+        ?>
+
+        <footer
+        <?php
+                echo astra_attr(
+                    'footer',
+                    array(
+                        'id'    => 'colophon',
+                        'class' => join( ' ', astra_get_footer_classes() ),
+                    )
+                );
+        ?>
+        >
+
+            <?php astra_footer_content_top(); ?>
+
+            <?php astra_footer_content(); ?>
+
+            <?php astra_footer_content_bottom(); ?>
+
+        </footer><!-- #colophon -->
+        <?php
     }
 }

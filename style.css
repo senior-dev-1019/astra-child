@@ -15,84 +15,73 @@
 
 @font-face {
 font-family: "Bebas N";
-src: url("./../assets/fonts/BebasNeue-Regular.ttf");
+src: url("./assets/fonts/BebasNeue-Regular.ttf");
 }
 
 @font-face {
 font-family: "OpenSans Bold";
-src: url("./../assets/fonts/OpenSans-Bold.ttf");
+src: url("./assets/fonts/OpenSans-Bold.ttf");
 }
 
 @font-face {
 font-family: "OpenSans BoldItalic";
-src: url("./../assets/fonts/OpenSans-BoldItalic.ttf");
+src: url("./assets/fonts/OpenSans-BoldItalic.ttf");
 }
 
 @font-face {
 font-family: "OpenSans ExtraBold";
-src: url("./../assets/fonts/OpenSans-ExtraBold.ttf");
+src: url("./assets/fonts/OpenSans-ExtraBold.ttf");
 }
 
 @font-face {
 font-family: "OpenSans ExtraBoldItalic";
-src: url("./../assets/fonts/OpenSans-ExtraBoldItalic.ttf");
+src: url("./assets/fonts/OpenSans-ExtraBoldItalic.ttf");
 }
 
 @font-face {
 font-family: "OpenSans Italic";
-src: url("./../assets/fonts/OpenSans-Italic.ttf");
+src: url("./assets/fonts/OpenSans-Italic.ttf");
 }
 
 @font-face {
 font-family: "OpenSans Light";
-src: url("./../assets/fonts/OpenSans-Light.ttf");
+src: url("./assets/fonts/OpenSans-Light.ttf");
 }
 
 @font-face {
 font-family: "OpenSans LightItalic";
-src: url("./../assets/fonts/OpenSans-LightItalic.ttf");
+src: url("./assets/fonts/OpenSans-LightItalic.ttf");
 }
 
 @font-face {
 font-family: "OpenSans Regular";
-src: url("./../assets/fonts/OpenSans-Regular.ttf");
+src: url("./assets/fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
 font-family: "OpenSans Semibold";
-src: url("./../assets/fonts/OpenSans-Semibold.ttf");
+src: url("./assets/fonts/OpenSans-Semibold.ttf");
 }
 
 @font-face {
 font-family: "OpenSans SemiboldItalic";
-src: url("./../assets/fonts/OpenSans-SemiboldItalic.ttf");
+src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 }
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
     font-family: 'Bebas N';
+    letter-spacing: 0.1em;
 }
 .ast-primary-header-bar {
     background-color: #91FF30;
 }
 
 .site-content {
-    background-color: #98C400;
+    background-color: #91FF30;
 }
 
 .ast-child-container {
 
-}
-
-@media (min-width: 544px){
-    .astra-child-title {
-        max-width: 100%;
-    }
-}
-
-@media (min-width: 922px){
-    .astra-child-title {
-        max-width: 1240px;
-    }
 }
 
 .astra-child-title {
@@ -103,9 +92,16 @@ src: url("./../assets/fonts/OpenSans-SemiboldItalic.ttf");
     padding-right: 20px;
 }
 
-.entry-title {
-    font-size: 5rem !important;
+.entry-header {
+    background-image: url('./assets/images/Header_HighRollersMain-min.jpg');
+    background-size: cover;
+    height: 428px;
 }
+
+.entry-child-title {
+    font-size: 5rem;
+}
+
 .child_title_first {
     color:  #fff;
     font-family: OpenSans BoldItalic;
@@ -113,5 +109,135 @@ src: url("./../assets/fonts/OpenSans-SemiboldItalic.ttf");
 
 .child_title_second {
     color:  #91FF30;
-    font-family: OpenSans Regular;
+    font-family: OpenSans BoldItalic;
+}
+
+.astra_child_footer {
+    background-color: #0B0603;
+}
+
+#menu-footer-menu {
+    list-style-type:none;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+#menu-footer-menu li {
+    list-style-type:none;
+    background-image:none;
+    background-repeat:none;
+    background-position:0;
+}
+
+#menu-footer-menu>li {
+    width: 24%;
+}
+
+#menu-footer-menu>li>a {
+    color:  white;
+    text-transform: uppercase;
+}
+
+#menu-footer-menu>li>ul>li>a {
+    color:  gray;
+}
+
+#menu-footer-menu>li>ul>li>a>p {
+    line-height: 1.3;
+}
+
+#menu-footer-menu>li>ul>li>a:hover {
+    color:  white;
+}
+.menu-item-has-children {    
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+}
+
+.content_bottom {
+    background-image: url('./assets/images/04-bg-min.jpg');
+    background-size: cover;
+    height: 730px;
+}
+.content_bottom_text_area {
+    padding-top: 20vh;
+    width: 40%;
+    margin-left: 10%;
+}
+.content_bottom_text_area>h2 {
+    color:  #91FF30;
+    font-family: "OpenSans ExtraBold";
+    font-size: 5rem;
+}
+.content_bottom_text_area>p {
+    color: lightgrey ;
+}
+
+.menu-footer-menu-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 544px){
+    .astra-child-title {
+        max-width: 100%;
+    }
+    .menu-footer-menu-container {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 922px){
+    .astra-child-title {
+        max-width: 1240px;
+    }
+    .menu-footer-menu-container {
+        max-width: 1240px;
+    }
+}
+
+@media (max-width: 1200px){
+    .entry-header {
+        height: 317px;
+    }
+    .entry-child-title {
+        font-size: 3rem;
+    }
+    .content_bottom {
+        height: 540px;
+    }
+    .content_bottom_text_area>h2 {
+        font-size: 3rem;
+    }
+    .content_bottom_text_area {
+        padding-top: 10vh;
+    }
+}
+
+@media (max-width: 544px){
+    .astra-child-title {
+        padding-top: 3vh;
+    }
+    .entry-header {
+        height: 130px;
+    }
+    .entry-child-title {
+        font-size: 2rem;
+    }
+    #menu-footer-menu>li {
+        width: 100%;
+    }
+    #menu-footer-menu {
+        text-align: left;
+    }
+    .content_bottom > h2 {
+            font-size: 2rem !important;
+    }
+    .content_bottom_text_area {
+        width: 100%;
+    }
 }

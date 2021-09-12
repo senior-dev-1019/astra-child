@@ -25,12 +25,12 @@
 >
 	<?php astra_entry_top(); ?>
 
-	<header class="entry-header <?php astra_entry_header_class(); ?>" style="background-image: url('../wp-content/themes/astra-child/assets/images/Header_HighRollersMain-min.jpg'); background-size: cover; height: 345px;">
+	<header class="entry-header <?php astra_entry_header_class(); ?>">
 		<?php
 
 		astra_child_the_title(
 			sprintf(
-				'<div class="astra-child-title"> <h2 class="entry-title" ' . astra_attr(
+				'<div class="astra-child-title"><h2 class="entry-child-title" ' . astra_attr(
 					'article-title-content',
 					array(
 						'class' => '',
@@ -38,7 +38,7 @@
 				) . '><a href="%s" rel="bookmark">',
 				esc_url( get_permalink() )
 			),
-			'</a></h2></div>'
+			'</a><hr style="height: 2px; width: 5rem; background-color: #fff;margin-top: 20px;"></h2></div>'
 		);
 		?>
 
