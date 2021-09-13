@@ -158,8 +158,12 @@ function astra_child_the_title( $before = '', $after = '', $post_id = 0, $echo =
     $title             = get_the_title();
 
     $title_array = explode(" ", $title, 2);
-
-    $title = $before . "<span class='child_title_first'>". $title_array[0] . "</span><br /><span class='child_title_second'>" . $title_array[1] ."</span>" . $after; 
+    $template_path = explode(".", basename( get_page_template() ));
+    $class_name = "child_title_first";
+    if(strpos($template_path[0], "sub")){
+        $class_name .= "_sub";
+    }
+    $title = $before . "<span class='$class_name'>". $title_array[0] . "</span><br /><span class='child_title_second'>" . $title_array[1] ."</span>" . $after; 
 
     // This will work same as `the_title` function but with Custom Title if exits.
     if ( $echo ) {

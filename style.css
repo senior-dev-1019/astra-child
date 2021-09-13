@@ -92,15 +92,25 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
     padding-right: 20px;
 }
 
+.astra-child-sub-title {
+    padding-top: 5vh;
+    display: inline-flex;
+}
+
 .entry-header {
     background-size: cover;
     height: 428px;
 }
 
 .entry-child-title {
+    text-transform: uppercase;
     font-size: 5rem;
+    width: 50%;
 }
 
+.child-title-right {
+    width: 100%;
+}
 .child_title_first {
     color:  #fff;
     font-family: OpenSans BoldItalic;
@@ -111,6 +121,47 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
     font-family: OpenSans BoldItalic;
 }
 
+.child_title_first_sub {
+    color:  #fff;
+    font-family: OpenSans ExtraBold;
+}
+
+.astra-child-sub-icons {
+    width: 50%;
+    font-size: 1rem;
+    color: lightgray;
+}
+.astra-child-sub-icons>ul {
+  list-style: none;
+  vertical-align: middle;
+}
+.astra-child-sub-icons>ul>li {
+  margin-top: 0.5em;
+  vertical-align: middle;
+}
+.astra-child-sub-icons>ul>li:before {
+  content: ' ';
+  display: inline-block;
+  background-size: 2.0em;
+  width: 3.3em; /* same as padding-left set on li */
+  height: 1.99em;
+  margin-bottom: -0.5em;
+}
+.i-icon:before {
+  background: url('./assets/icons/01bookie-icon-info1.png') no-repeat;
+}
+.home-icon:before {
+  background: url('./assets/icons/02bookie-icon-address1.png') no-repeat;
+}
+.location-icon:before {
+  background: url('./assets/icons/03bookie-icon-location1.png') no-repeat;
+}
+.chat-icon:before {
+  background: url('./assets/icons/04bookie-icon-chat1.png') no-repeat;
+}
+.user-icon:before {
+  background: url('./assets/icons/05bookie-icon-property1.png') no-repeat;
+}
 .astra_child_footer {
     background-color: #0B0603;
 }
@@ -159,14 +210,15 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 #menu-footer-menu>li>ul>li>a>i {
     color: white;
     float: right;
-    margin-right: -75px;
+    right:  0;
     font-family: "OpenSans Bold";
     font-style: initial;
+    font-size: 12px;
 }
 
 #menu-footer-menu>li>ul>li>a>span {
     color: white;
-    font-size: 3rem;
+    font-size: 2.3rem;
     line-height: 1.1;
     font-family: "OpenSans Bold";
 }
@@ -244,14 +296,24 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
     .astra-child-title {
         padding-top: 3vh;
     }
+    .astra-child-sub-title {
+        padding-top: 5vh;
+        display: block;
+    }
+
     .entry-header {
         height: 130px;
     }
     .entry-child-title {
         font-size: 2rem;
+        width: 100%;
+    }
+    .astra-child-sub-icons {
+        width: 100%;
     }
     #menu-footer-menu>li {
         width: 100%;
+        padding: 0 5%;
     }
     #menu-footer-menu {
         text-align: left;
