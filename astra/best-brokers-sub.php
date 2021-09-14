@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Template Name: Best-Brokers-Sub-ACC-EX
+ * Template Name: Best-Brokers-Sub
  * description: >-
-  Best-Brokers Sub ACC-EX Page template as new Regular Design 
+  Best-Brokers Sub Pages templates as new Regular Design 
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
