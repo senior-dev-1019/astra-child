@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Template Name: High-Rollers-Sub-VIP-IBC
+ * Template Name: Best-Brokers-Sub-BET-IBC
  * description: >-
-  High-Rollers Sub VIP-IBC Page template as new Regular Design 
+  Best-Brokers Sub BET-IBC Page template as new Regular Design 
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
