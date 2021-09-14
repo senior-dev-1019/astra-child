@@ -165,7 +165,10 @@ function astra_child_the_title( $before = '', $after = '', $post_id = 0, $echo =
     }
     $title = $before . "<span class='$class_name'>". $title_array[0] . "</span><br /><span class='child_title_second'>" . $title_array[1] ."</span>" . $after; 
 
-    // This will work same as `the_title` function but with Custom Title if exits.
+    if(strpos($template_path[0], "vipibc")){
+        $title = "";
+    }
+
     if ( $echo ) {
         echo $title; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
     } else {
