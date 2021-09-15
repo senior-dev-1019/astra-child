@@ -99,7 +99,7 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 
 .entry-header {
     background-size: cover;
-    background-repeat: round;  
+    background-repeat: round;
     height: 428px;
 }
 
@@ -236,6 +236,7 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 .content_bottom {
     background-image: url('./assets/images/04-bg-min.jpg');
     background-size: cover;
+    background-repeat: round;
     height: 730px;
 }
 .content_bottom_text_area {
@@ -319,10 +320,14 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
     #menu-footer-menu {
         text-align: left;
     }
+    .content_bottom {
+        height: 250px;
+    }
     .content_bottom > h2 {
             font-size: 2rem !important;
     }
     .content_bottom_text_area {
         width: 100%;
+        padding-top: 2vh;
     }
 }
