@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Template Name: E-Wallets-Sub-Neteller
+ * Template Name: E-Wallets-Sub-Skrill
  * description: >-
-  E-Wallets Sub Neteller Page template as new Regular Design 
+  E-Wallets Sub Skrill Page template as new Regular Design 
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
