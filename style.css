@@ -99,6 +99,7 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 
 .entry-header {
     background-size: cover;
+    background-repeat: round;  
     height: 428px;
 }
 
