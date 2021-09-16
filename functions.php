@@ -168,6 +168,9 @@ function astra_child_the_title( $before = '', $after = '', $post_id = 0, $echo =
     if(strpos($template_path[0], "vipibc") || strpos($template_path[0], "betibc") || strpos($template_path[0], "accex") || strpos($template_path[0], "neteller") || strpos($template_path[0], "skrill")){
         $title = "";
     }
+    if(strpos($template_path[0], "tips-sub")) {
+        $title = $before . "<span class='$class_name'> ". $title_array[0] . " </span><span class='child_title_second'>" . $title_array[1] ."</span>" . $after;
+    }
 
     if ( $echo ) {
         echo $title; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
