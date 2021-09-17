@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Template Name: High-Rollers-Sub-VIP-IBC
+ * Template Name: Top-Leagues-Sub-Dutch-Eredivisie
  * description: >-
-  High-Rollers Sub VIP-IBC Page template as new Regular Design 
+  Top-Leagues Sub Dutch Eredivisie Page template as new Regular Design 
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
