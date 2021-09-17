@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Template Name: Top-Leagues-Sub-Dutch-Eredivisie
+ * Template Name: Top-Leagues-Sub-English-Premier-League
  * description: >-
-  Top-Leagues Sub Dutch Eredivisie Page template as new Regular Design 
+  Top-Leagues Sub English Premier League Page template as new Regular Design 
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
