@@ -165,7 +165,7 @@ function astra_child_the_title( $before = '', $after = '', $post_id = 0, $echo =
     }
     $title = $before . "<span class='$class_name'>". $title_array[0] . "</span><br /><span class='child_title_second'>" . $title_array[1] ."</span>" . $after; 
 
-    if(strpos($template_path[0], "vipibc") || strpos($template_path[0], "betibc") || strpos($template_path[0], "accex") || strpos($template_path[0], "neteller") || strpos($template_path[0], "skrill") || strpos($template_path[0], "eredivisie") || strpos($template_path[0], "bundes")){
+    if(strpos($template_path[0], "vipibc") || strpos($template_path[0], "betibc") || strpos($template_path[0], "accex") || strpos($template_path[0], "neteller") || strpos($template_path[0], "skrill") || strpos($template_path[0], "eredivisie") || strpos($template_path[0], "bundes") || strpos($template_path[0], "argentina") || strpos($template_path[0], "laliga") || strpos($template_path[0], "leagueconforama") || strpos($template_path[0], "premierleague") || strpos($template_path[0], "seriea")){
         $title = "";
     }
     if(strpos($template_path[0], "tips-sub")) {
