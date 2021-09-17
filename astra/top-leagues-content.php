@@ -27,12 +27,12 @@
 >
 	<?php astra_entry_top(); ?>
 
-	<header class="entry-header <?php astra_entry_header_class(); ?>" style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/<?php echo $template_path[0] ?>.jpg);">
+	<header class="entry-header <?php astra_entry_header_class(); ?>" style='background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/<?php echo $template_path[0] ?>.jpg); text-align: right;'>
 		<?php
 
 		astra_child_the_title(
 			sprintf(
-				'<div class="astra-child-title"><div class="astra-child-sub-title"><h2 class="entry-child-title" ' . astra_attr(
+				'<div class="astra-child-title"><h2 class="entry-child-title child-title-right" ' . astra_attr(
 					'article-title-content',
 					array(
 						'class' => '',
@@ -40,12 +40,7 @@
 				) . '><a href="%s" rel="bookmark">',
 				esc_url( get_permalink() )
 			),
-			'</a></h2><div class="astra-child-sub-icons">'.
-			'<ul><li class="i-icon">NAME: Bet365</li>'.
-			'<li class="home-icon">Bet365 Limited, Hillside, Fesival way, Stoke-on-Trent, Staffs, ST15SH, United Kingdom</li>'.
-			'<li class="location-icon">United Kingdom</li></ul></div><div class="astra-child-sub-icons"><ul>'.
-			'<li class="chat-icon">LIVE CHAT AVAILABLE</li>'.
-			'<li class="user-icon">PROPRETARY: BET365</li></ul></div></div></div>'
+			'</a><br /><hr style="height: 2px; width: 5rem; background-color: #fff;margin-top: 20px; float: right;"></h2></div>'
 		);
 		?>
 
