@@ -1,9 +1,9 @@
 <?php
 
 /*
- * Template Name: Top-Leagues-Sub-Dutch-Eredivisie
+ * Template Name: Top-Leagues-Sub-Primera-Division-Argentina
  * description: >-
-  Top-Leagues Sub Dutch Eredivisie Page template as new Regular Design 
+  Top-Leagues Sub Primera Division Argentina Page template as new Regular Design 
 */
 
 if ( ! defined( 'ABSPATH' ) ) {
