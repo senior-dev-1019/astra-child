@@ -112,6 +112,14 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 .child-title-right {
     width: 100%;
 }
+
+.child_title_news {
+    width: 100%;
+    color: #91FF30;
+    font-family: OpenSans BoldItalic;
+    padding-top: 20vh;
+}
+
 .child_title_first {
     color:  #fff;
     font-family: OpenSans BoldItalic;
@@ -277,6 +285,9 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 }
 
 @media (max-width: 1200px){
+    .astra-child-title > .child_title_news {
+        padding-top: 5vh;
+    }
     .entry-header {
         height: 317px;
     }
@@ -297,6 +308,9 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 @media (max-width: 544px){
     .astra-child-title {
         padding-top: 3vh;
+    }
+    .astra-child-title > .child_title_news {
+        padding-top: 2vh;
     }
     .astra-child-sub-title {
         padding-top: 5vh;
