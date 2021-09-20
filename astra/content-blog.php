@@ -11,15 +11,13 @@
 ?>
 <?php astra_entry_before(); ?>
 <style type="text/css">
-	#primary {
-		margin:  0 !important;
+	.ast-separate-container #primary {
+	    padding:  0 !important;
 	}
+    #primary {
+        margin:  0 !important;
+    }
 </style>
-<header class="entry-header" style='background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/news.jpg); text-align: center;'>
-	<div class="astra-child-title">
-		<h2 class="entry-child-title child_title_news">What's the news!</h2>
-	</div>
-</header>
 <article style="background-color: #91FF30;"
 <?php
 		echo astra_attr(

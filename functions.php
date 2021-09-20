@@ -88,7 +88,15 @@ function child_loop_markup( $is_page = false ) {
 }
 
 function child_template_parts_content_top() {
-
+    if(astra_get_post_format() === "blog"){
+    ?>
+    <header class="entry-header" style='background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/news.jpg); text-align: center;'>
+        <div class="astra-child-title">
+            <h2 class="entry-child-title child_title_news">What's the news!</h2>
+        </div>
+    </header>
+    <?php
+    }
 }
 
 function child_template_parts_content_bottom() {
