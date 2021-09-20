@@ -40,6 +40,10 @@ function my_theme_enqueue_styles() {
     );
 }
 
+function astra_child_content_loop() {
+    do_action( 'astra_child_content_loop' );
+}
+
 function astra_child_content_page_loop() {
     do_action( 'astra_child_content_page_loop' );
 }
@@ -124,7 +128,7 @@ function child_template_parts_default() {
          * If you want to override this in a child theme, then include a file
          * called content-___.php (where ___ is the Post Format name) and that will be used instead.
          */
-        get_template_part( 'template-parts/content', astra_get_post_format() );
+        get_template_part( 'astra/content', astra_get_post_format() );
     }
 }
 
