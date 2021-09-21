@@ -11,8 +11,15 @@
 ?>
 
 <?php astra_entry_before(); ?>
-
-<article
+<style type="text/css">
+	.ast-separate-container #primary {
+	    padding:  0 !important;
+	}
+    #primary {
+        margin:  0 !important;
+    }
+</style>
+<article style="background-color: #91FF30;"
 <?php
 		echo astra_attr(
 			'article-content',
