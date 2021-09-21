@@ -104,8 +104,12 @@ function child_template_parts_content_bottom() {
 }
 
 function child_template_parts_page() {
-    $template_path = explode(".", basename( get_page_template() ));
-    get_template_part( 'astra/'.$template_path[0].'-content', 'page' );
+    if(is_front_page()) {
+        get_template_part( 'astra/content', 'page' );
+    } else {
+        $template_path = explode(".", basename( get_page_template() ));
+        get_template_part( 'astra/'.$template_path[0].'-content', 'page' );
+    }
 }
 
 function child_template_parts_comments() {
