@@ -295,6 +295,7 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
     color:  #91FF30;
     font-family: "OpenSans ExtraBold";
     font-size: 5rem;
+    text-transform: uppercase;
 }
 .content_bottom_text_area>p {
     color: lightgrey ;
