@@ -97,15 +97,6 @@ function child_template_parts_content_top() {
     </header>
     <?php
     }
-    if(is_front_page()){
-    ?>
-    <header class="entry-front-header" style='background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/01-bg-min.jpg); text-align: right;'>
-        <div class="astra-child-title">
-            <h2 class="entry-child-title child_title_front"><span class="child_title_front_first">Sports Betting</span><br /><span class="child_title_front_second">Winners!</span><br /><hr style="height: 2px; width: 5rem; background-color: #fff;margin-top: 20px; float: right;"></h2>
-        </div>
-    </header>
-    <?php
-    }
 }
 
 function child_template_parts_content_bottom() {

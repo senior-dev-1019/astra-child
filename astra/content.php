@@ -19,6 +19,19 @@
         margin:  0 !important;
     }
 </style>
+
+<header class="entry-front-header" style='background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/01-bg-min.jpg); text-align: right;'>
+    <div class="astra-child-title">
+        <h2 class="entry-child-title child_title_front"><span class="child_title_front_first">Sports Betting</span><br /><span class="child_title_front_second">Winners!</span><br /><hr style="height: 2px; width: 3rem; background-color: #fff; float: right;margin-bottom: 0;"></h2>
+        <br />
+        <p>Sports betting or betting, is much more than just a</p><p>game of luck! It takes lots of analysis, research,</p><p>preparation, and a little bit of dedication too.
+        </p><p>We ought to reat it as an investment in order to be</p><p>able to take it as seriously as we should.</p>
+        <br />
+        <div class="div_front_explore"><a href="#" class="btn_front_explore">EXPLORE</a></div>
+        
+    </div>
+</header>
+
 <article style="background-color: #91FF30;"
 <?php
 		echo astra_attr(
