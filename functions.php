@@ -64,13 +64,12 @@ function child_loop_markup_page() {
 function child_loop_markup( $is_page = false ) {
     ?>
     <main id="main" class="site-main">
-        <?php 
+        <?php
         if ( have_posts() ) :
             do_action( 'astra_child_template_parts_content_top' );
 
             while ( have_posts() ) :
                 the_post();
-
                 if ( true === $is_page ) {
                     do_action( 'astra_child_page_template_parts_content' );
                 } else {
@@ -203,10 +202,10 @@ function child_content_bottom() {
 ?> 
 <div class="content_bottom">
     <div class="content_bottom_text_area">
-        <h2>A TEXT HERE</h2>
+        <h2><?php echo get_field('field_614af9f14d5c0'); ?></h2>
         <hr style="height: 2px; width: 5rem; background-color: #fff;margin-top: 20px;">
-        <p>Our website is designed for both experienced and Indexperienced punters.</p>
-        <p>This being said, be sure to check our our full reviews and to also navigate across the different sections. We are convinced you'll find great value in what we share!</p>
+        <p><?php echo get_field('field_614afa1a4d5c1'); ?></p>
+        <p><?php echo get_field('field_614afa5e4d5c2'); ?></p>
     </div>
 </div>
 <?php

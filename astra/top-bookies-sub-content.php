@@ -11,30 +11,9 @@
 ?>
 
 <?php astra_entry_before(); ?>
-<style type="text/css">
-	.ast-separate-container #primary {
-	    padding:  0 !important;
-	}
-    #primary {
-        margin:  0 !important;
-    }
-</style>
 
-<header class="entry-front-header" style='background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/01-bg-min.jpg); text-align: right;'>
-    <div class="astra-child-title">
-        <h2 class="entry-child-title child_title_front"><span class="child_title_front_first">Sports Betting</span><br /><span class="child_title_front_second">Winners!</span><br /><hr style="height: 2px; width: 3rem; background-color: #fff; float: right;margin-bottom: 0;"></h2>
-        <br />
-        <p>Sports betting or betting, is much more than just a</p><p>game of luck! It takes lots of analysis, research,</p><p>preparation, and a little bit of dedication too.
-        </p><p>We ought to reat it as an investment in order to be</p><p>able to take it as seriously as we should.</p>
-        <br />
-        <div class="div_front_explore"><a href="#" class="btn_front_explore">EXPLORE</a></div>
-        
-    </div>
-</header>
-
-<article style="background-color: #91FF30;"
+<article
 <?php
-
 		echo astra_attr(
 			'article-content',
 			array(
@@ -42,26 +21,35 @@
 				'class' => join( ' ', get_post_class() ),
 			)
 		);
+
+    	$template_path = explode(".", basename( get_page_template() ));
 		?>
 >
 	<?php astra_entry_top(); ?>
 
-
-		<?php
-		// astra_the_title(
-		// 	sprintf(
-		// 		'<h2 class="entry-title" ' . astra_attr(
-		// 			'article-title-content',
-		// 			array(
-		// 				'class' => '',
-		// 			)
-		// 		) . '><a href="%s" rel="bookmark">',
-		// 		esc_url( get_permalink() )
-		// 	),
-		// 	'</a></h2>'
-		// );
+	<header class="entry-header <?php astra_entry_header_class(); ?>" style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/<?php echo $template_path[0] ?>.jpg);">
+		<?php 
+		
+		astra_child_the_title(
+			sprintf(
+				'<div class="astra-child-title"><div class="astra-child-sub-title"><h2 class="entry-child-title" ' . astra_attr(
+					'article-title-content',
+					array(
+						'class' => '',
+					)
+				) . '><a href="%s" rel="bookmark">',
+				esc_url( get_permalink() )
+			),
+			'</a></h2><div class="astra-child-sub-icons">'.
+			'<ul><li class="i-icon">NAME: '.get_field("field_614b1620c7e4b").'</li>'.
+			'<li class="home-icon">Bet365 Limited, Hillside, Fesival way, Stoke-on-Trent, Staffs, ST15SH, United Kingdom</li>'.
+			'<li class="location-icon">United Kingdom</li></ul></div><div class="astra-child-sub-icons"><ul>'.
+			'<li class="chat-icon">LIVE CHAT AVAILABLE</li>'.
+			'<li class="user-icon">PROPRETARY: BET365</li></ul></div></div></div>'
+		);
 		?>
 
+	</header><!-- .entry-header -->
 
 	<div class="entry-content clear" 
 	<?php
