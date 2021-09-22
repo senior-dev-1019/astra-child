@@ -29,6 +29,7 @@
 
 	<header class="entry-header <?php astra_entry_header_class(); ?>" style="background-image: url(<?php echo get_stylesheet_directory_uri() ?>/assets/images/<?php echo $template_path[0] ?>.jpg);">
 		<?php 
+		$chat_flag_text = get_field("field_614b16c6c7e4e") === true? "AVAILABLE": "UNAVAILABLE";
 		
 		astra_child_the_title(
 			sprintf(
@@ -42,10 +43,10 @@
 			),
 			'</a></h2><div class="astra-child-sub-icons">'.
 			'<ul><li class="i-icon">NAME: '.get_field("field_614b1620c7e4b").'</li>'.
-			'<li class="home-icon">Bet365 Limited, Hillside, Fesival way, Stoke-on-Trent, Staffs, ST15SH, United Kingdom</li>'.
-			'<li class="location-icon">United Kingdom</li></ul></div><div class="astra-child-sub-icons"><ul>'.
-			'<li class="chat-icon">LIVE CHAT AVAILABLE</li>'.
-			'<li class="user-icon">PROPRETARY: BET365</li></ul></div></div></div>'
+			'<li class="home-icon">'.get_field("field_614b1699c7e4c").'</li>'.
+			'<li class="location-icon">'.get_field("field_614b16a4c7e4d").'</li></ul></div><div class="astra-child-sub-icons"><ul>'.
+			'<li class="chat-icon">LIVE CHAT '.$chat_flag_text.'</li>'.
+			'<li class="user-icon">PROPRETARY: '.get_field("field_614b1715c7e4f").'</li></ul></div></div></div>'
 		);
 		?>
 
