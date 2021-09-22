@@ -103,6 +103,12 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
     height: 428px;
 }
 
+.entry-front-header {
+    background-size: cover;
+    background-repeat: round;
+    height: 694px;
+}
+
 .entry-child-title {
     text-transform: uppercase;
     font-size: 5rem;
@@ -130,6 +136,24 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
     font-family: OpenSans BoldItalic;
 }
 
+.child_title_front {
+    width: 100%;
+    color: #91FF30;
+    font-family: OpenSans BoldItalic;
+    padding-top: 10vh;
+}
+
+.child_title_front_first {
+    font-size: 3.7rem;
+    color:  #fff;
+    font-family: OpenSans BoldItalic;
+}
+
+.child_title_front_second {
+    font-size: 6rem;
+    color:  #91FF30;
+    font-family: OpenSans BoldItalic;
+}
 .child_title_first_sub {
     color:  #fff;
     font-family: OpenSans ExtraBold;
@@ -296,6 +320,9 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
     }
     .content_bottom {
         height: 540px;
+    }
+    .entry-front-header {
+        height: 578px;
     }
     .content_bottom_text_area>h2 {
         font-size: 3rem;

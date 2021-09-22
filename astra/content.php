@@ -32,24 +32,22 @@
 >
 	<?php astra_entry_top(); ?>
 
-	<header class="entry-header <?php astra_entry_header_class(); ?>">
 
 		<?php
-		astra_the_title(
-			sprintf(
-				'<h2 class="entry-title" ' . astra_attr(
-					'article-title-content',
-					array(
-						'class' => '',
-					)
-				) . '><a href="%s" rel="bookmark">',
-				esc_url( get_permalink() )
-			),
-			'</a></h2>'
-		);
+		// astra_the_title(
+		// 	sprintf(
+		// 		'<h2 class="entry-title" ' . astra_attr(
+		// 			'article-title-content',
+		// 			array(
+		// 				'class' => '',
+		// 			)
+		// 		) . '><a href="%s" rel="bookmark">',
+		// 		esc_url( get_permalink() )
+		// 	),
+		// 	'</a></h2>'
+		// );
 		?>
 
-	</header><!-- .entry-header -->
 
 	<div class="entry-content clear" 
 	<?php
