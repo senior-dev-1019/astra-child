@@ -27,7 +27,7 @@ get_header(); ?>
 		<?php 
 		astra_primary_content_top();
 		
-		astra_child_content_loop();
+		astra_content_loop();
 
 		astra_pagination();
 

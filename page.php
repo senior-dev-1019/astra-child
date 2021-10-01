@@ -29,7 +29,7 @@ get_header(); ?>
 
 		<?php astra_primary_content_top(); ?>
 
-		<?php astra_child_content_page_loop(); ?>
+		<?php astra_content_page_loop(); ?>
 
 		<?php astra_primary_content_bottom(); ?>
 

@@ -15,20 +15,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-<?php astra_child_content_bottom(); ?>
+<?php astra_content_bottom(); ?>
 	</div> <!-- ast-container -->
 	</div><!-- #content -->
 <?php 
 	astra_content_after();
 		
 	astra_footer_before();
-?>
-	<div class="astra_child_footer">
-<?php 
-	wp_nav_menu( array( 'theme_location' => 'footer_menu' ) );
-?>
-	</div>
-<?php 
+		
+	astra_footer();
+		
 	astra_footer_after(); 
 ?>
 	</div><!-- #page -->
