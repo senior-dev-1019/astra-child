@@ -14,29 +14,204 @@
 */
 
 @font-face {
-font-family: "Bebas N Regular";
+font-family: "Bebas N";
 src: url("./assets/fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+font-family: "OpenSans Bold";
+src: url("./assets/fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+font-family: "OpenSans BoldItalic";
+src: url("./assets/fonts/OpenSans-BoldItalic.ttf");
+}
+
+@font-face {
+font-family: "OpenSans ExtraBold";
+src: url("./assets/fonts/OpenSans-ExtraBold.ttf");
+}
+
+@font-face {
+font-family: "OpenSans ExtraBoldItalic";
+src: url("./assets/fonts/OpenSans-ExtraBoldItalic.ttf");
+}
+
+@font-face {
+font-family: "OpenSans Italic";
+src: url("./assets/fonts/OpenSans-Italic.ttf");
+}
+
+@font-face {
+font-family: "OpenSans Light";
+src: url("./assets/fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+font-family: "OpenSans LightItalic";
+src: url("./assets/fonts/OpenSans-LightItalic.ttf");
+}
+
+@font-face {
+font-family: "OpenSans Regular";
+src: url("./assets/fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+font-family: "OpenSans Semibold";
+src: url("./assets/fonts/OpenSans-Semibold.ttf");
+}
+
+@font-face {
+font-family: "OpenSans SemiboldItalic";
+src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 }
 
 #mega-menu-wrap-primary #mega-menu-primary > li.mega-menu-item > a.mega-menu-link {
     font-family: 'Bebas N';
-    /*letter-spacing: 0.1em;*/
+    letter-spacing: 0.1em;
 }
 .ast-primary-header-bar {
-    background-color: #D3FC32;
+    background-color: #91FF30;
 }
 
 .site-content {
-    background-color: #D3FC32;
+    background-color: #91FF30;
 }
 
-.astra_child_footer {
-    background-color: #0B0603;
+.ast-child-container {
+
 }
 
-.menu-footer-menu-container {
+.astra-child-title {
     margin-left: auto;
     margin-right: auto;
+    padding-top: 10vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.astra-child-title>p {
+    color: lightgray;
+    line-height: 16px;
+    margin-bottom: 0;
+}
+.div_front_explore {
+    float: right;
+    font-size: 1.5rem;
+    width: 150px;
+    border: #91FF30 solid 2px;
+    text-align: center;
+}
+.btn_front_explore {
+    color: lightgray;
+}
+.astra-child-sub-title {
+    padding-top: 5vh;
+    display: inline-flex;
+}
+
+.entry-header {
+    background-size: cover;
+    background-repeat: round;
+    height: 428px;
+}
+
+.entry-front-header {
+    background-size: cover;
+    background-repeat: round;
+    height: 694px;
+}
+
+.entry-child-title {
+    text-transform: uppercase;
+    font-size: 5rem;
+    width: 50%;
+}
+
+.child-title-right {
+    width: 100%;
+}
+
+.child_title_news {
+    width: 100%;
+    color: #91FF30;
+    font-family: OpenSans BoldItalic;
+    padding-top: 10vh;
+}
+
+.child_title_first {
+    color:  #fff;
+    font-family: OpenSans BoldItalic;
+}
+
+.child_title_second {
+    color:  #91FF30;
+    font-family: OpenSans BoldItalic;
+}
+
+.child_title_front {
+    width: 100%;
+    color: #91FF30;
+    font-family: OpenSans BoldItalic;
+    padding-top: 10vh;
+}
+
+.child_title_front_first {
+    font-size: 3.7rem;
+    color:  #fff;
+    font-family: OpenSans BoldItalic;
+}
+
+.child_title_front_second {
+    font-size: 6rem;
+    color:  #91FF30;
+    font-family: OpenSans BoldItalic;
+}
+.child_title_first_sub {
+    color:  #fff;
+    font-family: OpenSans ExtraBold;
+}
+
+.astra-child-sub-icons {
+    width: 50%;
+    font-size: 1rem;
+    color: lightgray;
+}
+.astra-child-sub-icons>ul {
+  list-style: none;
+  vertical-align: middle;
+}
+.astra-child-sub-icons>ul>li {
+  margin-top: 0.5em;
+  vertical-align: middle;
+}
+.astra-child-sub-icons>ul>li:before {
+  content: ' ';
+  display: inline-block;
+  background-size: 2.0em;
+  width: 3.3em; /* same as padding-left set on li */
+  height: 1.99em;
+  margin-bottom: -0.5em;
+}
+.i-icon:before {
+  background: url('./assets/icons/01bookie-icon-info1.png') no-repeat;
+}
+.home-icon:before {
+  background: url('./assets/icons/02bookie-icon-address1.png') no-repeat;
+}
+.location-icon:before {
+  background: url('./assets/icons/03bookie-icon-location1.png') no-repeat;
+}
+.chat-icon:before {
+  background: url('./assets/icons/04bookie-icon-chat1.png') no-repeat;
+}
+.user-icon:before {
+  background: url('./assets/icons/05bookie-icon-property1.png') no-repeat;
+}
+.astra_child_footer {
+    background-color: #0B0603;
 }
 
 #menu-footer-menu {
@@ -105,20 +280,132 @@ src: url("./assets/fonts/BebasNeue-Regular.ttf");
     vertical-align: top;
 }
 
+.content_bottom {
+    background-image: url('./assets/images/04-bg-min.jpg');
+    background-size: cover;
+    background-repeat: round;
+    height: 730px;
+}
+.content_bottom_text_area {
+    padding-top: 20vh;
+    width: 40%;
+    margin-left: 10%;
+}
+.content_bottom_text_area>h2 {
+    color:  #91FF30;
+    font-family: "OpenSans ExtraBold";
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.content_bottom_text_area>p {
+    color: lightgrey ;
+}
+
+.menu-footer-menu-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media (min-width: 544px){
+    .astra-child-title {
+        max-width: 100%;
+    }
     .menu-footer-menu-container {
         max-width: 100%;
     }
 }
 
 @media (min-width: 922px){
+    .astra-child-title {
+        max-width: 1240px;
+    }
     .menu-footer-menu-container {
         max-width: 1240px;
     }
 }
 
+@media (max-width: 1200px){
+    .astra-child-title > .child_title_news {
+        padding-top: 5vh;
+    }
+    .div_front_explore {
+        font-size: 1.2rem;
+    }
+    .entry-header {
+        height: 317px;
+    }
+    .entry-child-title {
+        font-size: 3rem;
+    }
+    .child_title_front_first {
+        font-size: 3rem;
+    }
+    .child_title_front {
+        padding-top: 5vh;
+    }
+    .child_title_front_second {
+        font-size: 5rem;
+    }
+    .content_bottom {
+        height: 540px;
+    }
+    .entry-front-header {
+        height: 578px;
+    }
+    .content_bottom_text_area>h2 {
+        font-size: 3rem;
+    }
+    .content_bottom_text_area {
+        padding-top: 10vh;
+    }
+}
+
+@media (max-width: 922px){
+    .child_title_front_first {
+        font-size: 2.5rem;
+    }
+
+    .child_title_front_second {
+        font-size: 4rem;
+    }
+    .entry-front-header {
+        height: 436px;
+    }
+    .child_title_front {
+        padding-top: 0;
+    }
+}
 @media (max-width: 544px){
-    
+    .astra-child-title {
+        padding-top: 3vh;
+    }
+    .astra-child-title > .child_title_news {
+        padding-top: 2vh;
+    }
+    .astra-child-sub-title {
+        padding-top: 5vh;
+        display: block;
+    }
+    .entry-front-header {
+        height: 320px;
+    }
+    .child_title_front_first {
+        font-size: 1.8rem;
+    }
+
+    .child_title_front_second {
+        font-size: 3rem;
+    }
+    .entry-header {
+        height: 130px;
+    }
+    .entry-child-title {
+        font-size: 2rem;
+        width: 100%;
+    }
+    .astra-child-sub-icons {
+        width: 100%;
+    }
     #menu-footer-menu>li {
         width: 100%;
         padding: 0 5%;
@@ -126,14 +413,20 @@ src: url("./assets/fonts/BebasNeue-Regular.ttf");
     #menu-footer-menu {
         text-align: left;
     }
+    .content_bottom {
+        height: 250px;
+    }
+    .content_bottom > h2 {
+            font-size: 2rem !important;
+    }
+    .content_bottom_text_area {
+        width: 100%;
+        padding-top: 2vh;
+    }
 }
-
 /*
 lightgray:  #d3d3d3;
-background-color: #D3FC32 ;Text Goes Here
-background-color(gray): #151E29
-background-color(black): #040C12
-green statium: ;
+background-color: #D3FC32 ;
 bottom line element
 <br><hr style="height: 2px; width: 3rem; background-color: #000;margin-top: 20px; margin-left: auto; margin-right: auto;">
-byemamo@hotmail.com */
+byemamo@hotmail.com */ 
