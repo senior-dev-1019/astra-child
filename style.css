@@ -346,11 +346,11 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
     .child_title_front_second {
         font-size: 5rem;
     }
-    .content_bottom {
-        height: 540px;
-    }
     .entry-front-header {
         height: 578px;
+    }
+    .content_bottom {
+        height: 540px;
     }
     .content_bottom_text_area>h2 {
         font-size: 3rem;
@@ -426,7 +426,10 @@ src: url("./assets/fonts/OpenSans-SemiboldItalic.ttf");
 }
 /*
 lightgray:  #d3d3d3;
-background-color: #D3FC32 ;
+background-color: #D3FC32
+lightgray bg: #171e28
+lightgray title: #95c400
+lightgray font: #989da1
 bottom line element
 <br><hr style="height: 2px; width: 3rem; background-color: #000;margin-top: 20px; margin-left: auto; margin-right: auto;">
 byemamo@hotmail.com */ live:jsonbrawn
